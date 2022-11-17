@@ -1,0 +1,436 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SalonBelleza.AccesoADatos</name>
+    </assembly>
+    <members>
+        <member name="M:SalonBelleza.AccesoADatos.CitaDAL.CrearAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para guardar de forma Asincronica. para que un metodo sea Asincronico debe llevar la palabra Async
+             y usar al menos un metodo asincronico en el.
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.CitaDAL.ModificarAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Con este metodo Actualisaremos en la base de datos el Cita.
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.CitaDAL.EliminarAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para eliminar para Eliminar un Cita en la Base de Datos.
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.CitaDAL.ObtenerPorIdAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para Obtener por Id un Cita en la base de Datos
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.CitaDAL.ObtenerTodosAsync">
+             <summary>  
+             Metodo para obtener todos los Cita en la base de Datos.'
+             </summary>  
+             <returns>Retorna una Lista de Cita</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.CitaDAL.QuerySelect(System.Linq.IQueryable{SalonBelleza.EntidadesDeNegocio.Cita},SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo QuerySelect sirve para hacer filtros personalisados utilizando Entity, LinQ expresiones lanba.
+            Iternal es para indicar que este Metodo se usara solo dentro del mismo NameSpace.
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Retorna las coincidencias encontradas en la base de Datos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.CitaDAL.BuscarAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para Obtener por Id un Cita en la base de Datos
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.CitaDAL.BuscarIncluirUsuarioAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para Buscar con Citas Incluidos con Usuarios
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Objeto tipo List Cita que contenga la lista de Usuario</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.CitaDAL.BuscarIncluirClienteAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para Buscar con Citas Incluidos con Clientes
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Objeto tipo List Cita que contenga la lista de Clientes</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.CitaDAL.BuscarIncluirUsuarioClienteAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para Buscar con Citas Incluidos con Usuarios y Clientes
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Objeto tipo List Cita que contenga la lista de Usaurios y Clientes</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.ClienteDAL.CrearAsync(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para crear un Nuevo cliente.
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Cliente, con sus valores llenos</param>  
+            <returns>Devuelve un entero para conocer la respuesta del Metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.ClienteDAL.ModificarAsync(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para Modificar un Cliente segun los parametros agregados.
+            </summary>  
+            <param name="pCliente">Se espera un objeto del tipo Cliente con todas sus propiedades llenas</param>
+            <returns>Devuelve un entero para conocer la respuesta del metodo </returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.ClienteDAL.EliminarAsync(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para Eliminar un Cliente segun el Id.
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Cliente, con sus valores llenos</param>  
+            <returns>Devuelve un entero para conocer la respuesta del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.ClienteDAL.ObtenerPorIdAsync(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para obtener por ID un cliente ingresado
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Cliente, con sus valores llenos</param>  
+            <returns>Devuelve un entero para conocer la respuesta del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.ClienteDAL.ObtenerTodosAsync">
+            <summary>  
+            Metodo para Obtener todos los Cliente.
+            </summary>  
+            <returns>Devuelve una Lista de Clientes</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.ClienteDAL.QuerySelect(System.Linq.IQueryable{SalonBelleza.EntidadesDeNegocio.Cliente},SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para Buscar por parametros
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Cliente, con sus valores llenos</param>  
+            /// <param name="pQuery">Se espera una IQueryable de Cliente</param>
+            <returns>Devuelve un pQuery con las coincidencias encontradas en la base de Datos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.ClienteDAL.BuscarAsync(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para Buscar un Cliente Async
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+            <returns>Retorna una Lista de Clientes con las coincidencias encontradas</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.DetalleCitaDAL.CrearAsync(SalonBelleza.EntidadesDeNegocio.DetalleCita)">
+             <summary>  
+             Metodo para guardar de forma Asincronica. para que un metodo sea Asincronico debe llevar la palabra Async
+             y usar al menos un metodo asincronico en el.
+             </summary> 
+             <param name="pDetalleCita">Se espera un objeto del Tipo DetalleCita, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.DetalleCitaDAL.ModificarAsync(SalonBelleza.EntidadesDeNegocio.DetalleCita)">
+             <summary>  
+             Con este metodo Actualisaremos en la base de datos el DetalleCita.
+             </summary>  
+             <param name="pDetalleCita">Se espera un objeto del Tipo DetalleCita, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.DetalleCitaDAL.EliminarAsync(SalonBelleza.EntidadesDeNegocio.DetalleCita)">
+             <summary>  
+             Metodo para eliminar para Eliminar un DetalleCita en la Base de Datos.
+             </summary>  
+             <param name="pDetalleCita">Se espera un objeto del Tipo DetalleCita, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.DetalleCitaDAL.ObtenerPorIdAsync(SalonBelleza.EntidadesDeNegocio.DetalleCita)">
+             <summary>  
+             Metodo para Obtener por Id un DetalleCita en la base de Datos
+             </summary>  
+             <param name="pDetalleCita">Se espera un objeto del Tipo DetalleCita, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.DetalleCitaDAL.ObtenerTodosAsync">
+             <summary>  
+             Metodo para obtener todos los DetalleCita en la base de Datos.'
+             </summary>  
+             <returns>Retorna una Lista de DetalleCita</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.DetalleCitaDAL.QuerySelect(System.Linq.IQueryable{SalonBelleza.EntidadesDeNegocio.DetalleCita},SalonBelleza.EntidadesDeNegocio.DetalleCita)">
+             <summary>  
+             Metodo QuerySelect sirve para hacer filtros personalisados utilizando Entity, LinQ expresiones lanba.
+            Iternal es para indicar que este Metodo se usara solo dentro del mismo NameSpace.
+             </summary>  
+             <param name="pDetalleCita">Se espera un objeto del Tipo DetalleCita, con sus valores llenos</param>  
+             <returns>Retorna las coincidencias encontradas en la base de Datos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.DetalleCitaDAL.BuscarAsync(SalonBelleza.EntidadesDeNegocio.DetalleCita)">
+             <summary>  
+             Metodo para Obtener por Id un DetalleCita en la base de Datos
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.DetalleCitaDAL.BuscarIncluirServicioAsync(SalonBelleza.EntidadesDeNegocio.DetalleCita)">
+             <summary>  
+             Metodo para Buscar con Citas Incluidos con DetalleCita
+             </summary>  
+             <param name="pDetalleCita">Se espera un objeto del Tipo DetalleCita, con sus valores llenos</param>  
+             <returns>Objeto tipo List DetalleCita que contenga la lista de Servicio</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.DetalleCitaDAL.CrearDetalles(SalonBelleza.AccesoADatos.DBContexto,System.Collections.Generic.List{SalonBelleza.EntidadesDeNegocio.DetalleCita},SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para crear detalles
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.DetalleCitaDAL.ActualizarDetalles(SalonBelleza.AccesoADatos.DBContexto,System.Collections.Generic.List{SalonBelleza.EntidadesDeNegocio.DetalleCita},SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para actualizar detalles
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.RolDAL.CrearAsync(SalonBelleza.EntidadesDeNegocio.Rol)">
+             <summary>  
+             Metodo para guardar de forma Asincronica. para que un metodo sea Asincronico debe llevar la palabra Async
+             y usar al menos un metodo asincronico en el.
+             </summary>  
+             <param name="pRol">Se espera un objeto del Tipo Rol, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.RolDAL.ModificarAsync(SalonBelleza.EntidadesDeNegocio.Rol)">
+             <summary>  
+             Con este metodo Actualisaremos en la base de datos el Rol.
+             </summary>  
+             <param name="pRol">Se espera un objeto del Tipo Rol, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.RolDAL.EliminarAsync(SalonBelleza.EntidadesDeNegocio.Rol)">
+             <summary>  
+             Metodo para eliminar para Eliminar un Rol en la Base de Datos.
+             </summary>  
+             <param name="pRol">Se espera un objeto del Tipo Rol, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.RolDAL.ObtenerPorIdAsync(SalonBelleza.EntidadesDeNegocio.Rol)">
+             <summary>  
+             Metodo para Obtener por Id un Rol en la base de Datos
+             </summary>  
+             <param name="pRol">Se espera un objeto del Tipo Rol, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.RolDAL.ObtenerTodosAsync">
+             <summary>  
+             Metodo para obtener todos los Roles en la base de Datos.'
+             </summary>  
+             <returns>Retorna una Lista de Roles</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.RolDAL.QuerySelect(System.Linq.IQueryable{SalonBelleza.EntidadesDeNegocio.Rol},SalonBelleza.EntidadesDeNegocio.Rol)">
+             <summary>  
+             Metodo QuerySelect sirve para hacer filtros personalisados utilizando Entity, LinQ expresiones lanba.
+            Iternal es para indicar que este Metodo se usara solo dentro del mismo NameSpace.
+             </summary>  
+             <param name="pRol1">Se espera un objeto del Tipo Rol, con sus valores llenos</param>  
+             <returns>Retorna las coincidencias encontradas en la base de Datos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.RolDAL.BuscarAsync(SalonBelleza.EntidadesDeNegocio.Rol)">
+             <summary>  
+             Metodo para Obtener por Id un Rol en la base de Datos
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.ServicioDAL.CrearAsync(SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo para crear un Nuevo Servicio.
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Servicio, con sus valores llenos</param>  
+            <returns>Devuelve un entero para conocer la respuesta del Metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.ServicioDAL.ModificarAsync(SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo para Modificar un Servicio si encuentra coincidencia en la base de datos.
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Servicio, con sus valores llenos</param>  
+            <returns>Devuelve un entero para conocer la respuesta del Metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.ServicioDAL.EliminarAsync(SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo para Eliminar un servicio si encuentra un Id como coincidencia.
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Servicio, con sus valores llenos</param>  
+            <returns>Devuelve un entero para conocer la respuesta del Metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.ServicioDAL.ObtenerPorIdAsync(SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo para Obtener un Servicio Por ID
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Cliente, con sus valores llenos</param>  
+            <returns>Devuelve un entero para conocer la respuesta del Metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.ServicioDAL.ObtenerTodosAsync">
+            <summary>  
+            Metodo para Obtener Todos los Servicios
+            </summary>   
+            <returns>Devuelve un entero para conocer la respuesta del Metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.ServicioDAL.QuerySelect(System.Linq.IQueryable{SalonBelleza.EntidadesDeNegocio.Servicio},SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            filtros personalizados usando un Iqueryable con expresiones lambday linQ(en proceso)
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Cliente, con sus valores llenos</param>  
+            /// <param name="pQuery">Se espera una IQueryable de Cliente</param>
+            <returns>Devuelve un pQuery con las coincidencias encontradas en la base de Datos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.ServicioDAL.BuscarAsync(SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo para Buscar un Cliente Async
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+            <returns>Retorna una Lista de Clientes con las coincidencias encontradas</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.UsuarioDAL.EncriptarMD5(SalonBelleza.EntidadesDeNegocio.Usuario)">
+            <summary>  
+            Metodo para Encriptar la Contraseña.  
+            </summary>  
+            <param name="pUsuario">Se espera como parametro un Objeto de Tipo Usuario, el cual debe contener el Password del usuario</param>   
+            <returns>Obtenemos la Password completamente Encriptada</returns>  
+             
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.UsuarioDAL.ExisteLogin(SalonBelleza.EntidadesDeNegocio.Usuario,SalonBelleza.AccesoADatos.DBContexto)">
+            <summary>  
+            Metodo para validar si existe un Login en la base de datos
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+            <param name="pDbContext">Se espera un objeto del DbContexto para mapear la Entidad</param>  
+            <returns>Si el usurio ya existe en la base de Datos, arroja True</returns>  
+             
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.UsuarioDAL.CrearAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+             <summary>  
+             Metodo para guardar de forma Asincronica. para que un metodo sea Asincronico debe llevar la palabra Async
+             y usar al menos un metodo asincronico en el.
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.UsuarioDAL.ModificarAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+             <summary>  
+             Con este metodo Actualisaremos en la base de datos el Usuario.
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.UsuarioDAL.EliminarAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+             <summary>  
+             Metodo para eliminar para Eliminar un Usuario en la Base de Datos.
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.UsuarioDAL.ObtenerPorIdAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+             <summary>  
+             Metodo para Obtener por Id un usuario en la base de Datos
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.UsuarioDAL.ObtenerTodosAsync">
+             <summary>  
+             Metodo para obtener todos los Usuarios en la base de Datos.'
+             </summary>  
+             <returns>Retorna una Lista de usuarios</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.UsuarioDAL.QuerySelect(System.Linq.IQueryable{SalonBelleza.EntidadesDeNegocio.Usuario},SalonBelleza.EntidadesDeNegocio.Usuario)">
+             <summary>  
+             Metodo QuerySelect sirve para hacer filtros personalisados utilizando Entity, LinQ expresiones lanba.
+            Iternal es para indicar que este Metodo se usara solo dentro del mismo NameSpace.
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Retorna las coincidencias encontradas en la base de Datos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.UsuarioDAL.BuscarAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+             <summary>  
+             Metodo para Obtener por Id un usuario en la base de Datos
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Resultado en Entero del metodo</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.UsuarioDAL.BuscarIncluirRolesAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+             <summary>  
+             Metodo para Buscar con Roles Incluidos
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Objeto tipo List usuario que contenga la lista de Roles</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.UsuarioDAL.LoginAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+            <summary>  
+            Metodo para Iniciar el login y validar si esas credenciales existen en el sistema.
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+            <returns>Objeto tipo usuario lleno si encuentra coincidencias, si no estara vacio</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.AccesoADatos.UsuarioDAL.CambiarPasswordAsync(SalonBelleza.EntidadesDeNegocio.Usuario,System.String)">
+            <summary>  
+            Metodo para cambiar el Password, Comparando si esta correcto el password actual.
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+            /// <param name="pPasswordAnt">Se espera una variable la cual contenga la PasswordAnterior</param>
+            <returns>Devuelve un entero para conocer la respuesta</returns>  
+            
+        </member>
+    </members>
+</doc>

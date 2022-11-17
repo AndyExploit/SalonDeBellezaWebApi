@@ -1,0 +1,145 @@
+﻿@model SalonBelleza.EntidadesDeNegocio.Cita
+
+@{
+    ViewData["Title"] = "Create";
+    List<SalonBelleza.EntidadesDeNegocio.Usuario> usuarios = ViewBag.Usuarios as List<SalonBelleza.EntidadesDeNegocio.Usuario>;
+    List<SalonBelleza.EntidadesDeNegocio.Cliente> clientes = ViewBag.Clientes as List<SalonBelleza.EntidadesDeNegocio.Cliente>;
+    List<SalonBelleza.EntidadesDeNegocio.Servicio> servicios = ViewBag.Servicios as List<SalonBelleza.EntidadesDeNegocio.Servicio>;
+}
+
+<h1>Crear Cita</h1>
+<hr />
+<form asp-action="Create">
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" style="color:black;">Datos</a>
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false" style="color:black;">Agregar Servicios</a>
+        </div>
+    </nav>
+    <br />
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            @*codigo html de campos a llenar*@
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="IdUsuario" class="control-label"></label>
+                        <select asp-for="IdUsuario" class="form-control">
+                            <option selected value="">SELECCIONAR</option>
+                            @foreach (var item in usuarios)
+                            {
+                                <option value="@item.Id">@item.Nombre</option>
+                            }
+                        </select>
+                        <span asp-validation-for="IdUsuario" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="IdCliente" class="control-label"></label>
+                        <select asp-for="IdCliente" class="form-control">
+                            <option selected value="">SELECCIONAR</option>
+                            @foreach (var item in clientes)
+                            {
+                                <option value="@item.Id">@item.Nombre</option>
+                            }
+                        </select>
+                        <span asp-validation-for="IdCliente" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="FechaCita" class="control-label"></label>
+                        <input type="datetime-local" name="fechaCita" class="form-control" />
+                        <span asp-validation-for="FechaCita" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="Total" class="control-label"></label>
+                        <input type="number" class="form-control" name="Total" />
+                        <span asp-validation-for="Total" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="Estado" class="control-label"></label>
+                        <select asp-for="Estado" class="form-control">
+                            <option value="">SELECCIONAR</option>
+                            <option selected value="1">PENDIENTE</option>
+                            <option value="2">REALIZADA</option>
+                        </select>
+                        <span asp-validation-for="Estado" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            @*aqui termina codigo html de campos a llenar*@
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            @*aqui comienza el codigo html de manejar*@
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Servicios</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option selected value="0">SELECCIONAR</option>
+                            @foreach (var item in servicios)
+                            {
+                                <option value="@item.Id" data-precio="@item.Precio" data-duracion="@item.Duracion">@item.Nombre</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Presiona para agregar</label><br />
+                        <button onclick="add();" type="button" class="btn btn-primary">
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table table-sm" id="table">
+                <thead>
+                    <tr>
+                        <td style="display:none">Id</td>
+                        <td style="display:none">IdServicio</td>
+                        <td>Servicio</td>
+                        <td>Precio</td>
+                        <td>Duracion</td>
+
+                        <td>Eliminar</td>
+                    </tr>
+                </thead>
+                <tbody id="tbd">
+                </tbody>
+            </table>
+            @*aqui termina*@
+        </div>
+    </div>
+
+    
+
+    
+
+
+    @*botones*@
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-dark">Cancelar</a>
+            </div>
+            <span class="text-danger">@ViewBag.Error</span>
+        </div>
+    </div>
+</form>
+
+    <script src="~/js/crearTabla.js" asp-append-version="true"></script>
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }

@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SalonBelleza.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:SalonBelleza.WebAPI.Controllers.CitaController.Put(System.Int32,SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para Modificar un Cita haiciendo PUT
+             </summary>  
+             <param name="cita">Se espera un objeto del Tipo cita con todos sus datos incluyendo ID</param> 
+             <param name="id">Se espera un entero el cual contenga el Id</param> 
+             <returns>Retorna la respuesta de la Peticion</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.CitaController.Buscar(System.Object)">
+             <summary>  
+             Metodo para Buscar una Cita segun los parametros enviados
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita</param> 
+             <returns>Retorna un objeto rol si encuentra coincidencias</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.RolController.Get">
+             <summary>  
+             Metodo Get para obtener todos los Roles
+             </summary>   
+             <returns>Retorna una Lista de Roles</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.RolController.Get(System.Int32)">
+             <summary>  
+             Metodo para Obtener un Rol por ID al hacer GET
+             </summary>  
+             <param name="id">Se espera un entero el cual contenga el Id</param> 
+             <returns>Retorna el objeto rol con sus campos llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.RolController.Post(SalonBelleza.EntidadesDeNegocio.Rol)">
+             <summary>  
+             Metodo para crear un Rol al hacer Post
+             </summary>  
+             <param name="rol">Se espera un objeto del Tipo rol el cual contenga todos sus datos menos el ID</param> 
+             <returns>Retorna la respuesta de la Peticion</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.RolController.Put(System.Int32,SalonBelleza.EntidadesDeNegocio.Rol)">
+             <summary>  
+             Metodo para Modificar un Rol haiciendo PUT
+             </summary>  
+             <param name="rol">Se espera un objeto del Tipo rol con todos sus datos incluyendo ID</param> 
+             <param name="id">Se espera un entero el cual contenga el Id</param> 
+             <returns>Retorna la respuesta de la Peticion</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.RolController.Delete(System.Int32)">
+             <summary>  
+             Metodo para Eliminar un Rol haiciendo DELETE 
+             </summary>   
+             <param name="id">Se espera un entero el cual contenga el Id</param> 
+             <returns>Retorna la respuesta de la Peticion</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.RolController.Buscar(System.Object)">
+             <summary>  
+             Metodo para Buscar un Rol segun los parametros enviados
+             </summary>  
+             <param name="pRol">Se espera un objeto del Tipo Rol</param> 
+             <returns>Retorna un objeto rol si encuentra coincidencias</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.ServicioController.Get">
+             <summary>  
+             Metodo Get para obtener todos los Servicios
+             </summary>   
+             <returns>Retorna una Lista de Servicios</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.ServicioController.Get(System.Int32)">
+             <summary>  
+             Metodo para Obtener una Servicio por ID al hacer GET
+             </summary>  
+             <param name="id">Se espera un entero el cual contenga el Id</param> 
+             <returns>Retorna el objeto Servicio con sus campos llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.ServicioController.Post(SalonBelleza.EntidadesDeNegocio.Servicio)">
+             <summary>  
+             Metodo para crear una Servicio al hacer Post
+             </summary>  
+             <param name="servicio">Se espera un objeto del Tipo Servicio el cual contenga todos sus datos menos el ID</param> 
+             <returns>Retorna la respuesta de la Peticion</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.ServicioController.Put(System.Int32,SalonBelleza.EntidadesDeNegocio.Servicio)">
+             <summary>  
+             Metodo para Modificar un Servicio haiciendo PUT
+             </summary>  
+             <param name="servicio">Se espera un objeto del Tipo Servicio con todos sus datos incluyendo ID</param> 
+             <param name="id">Se espera un entero el cual contenga el Id</param> 
+             <returns>Retorna la respuesta de la Peticion</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.ServicioController.Delete(System.Int32)">
+             <summary>  
+             Metodo para Eliminar un Servicio haiciendo DELETE 
+             </summary>   
+             <param name="id">Se espera un entero el cual contenga el Id</param> 
+             <returns>Retorna la respuesta de la Peticion</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.ServicioController.Buscar(System.Object)">
+             <summary>  
+             Metodo para Buscar un Servicio segun los parametros enviados
+             </summary>  
+             <param name="pServicio">Se espera un objeto del Tipo Servicio</param> 
+             <returns>Retorna un objeto Servicio si encuentra coincidencias</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.UsuarioController.#ctor(SalonBelleza.WebAPI.Auth.IJwtAuthenticationService)">
+            <summary>  
+            Metodo para generar el token
+            </summary>  
+            <param name="pAuthService">Se espera un objeto del Tipo IJwtAuthenticationService</param>
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.UsuarioController.Get">
+            <summary>  
+            Metodo para Obtener un usuario haciendo peticion a la DAL
+            </summary> 
+            <returns>Objeto tipo usuario con sus campos llenos</returns>  
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.UsuarioController.Get(System.Int32)">
+            <summary>  
+            Metodo para Obtener por Id un usuario haciendo peticion a la DAL
+            </summary>  
+            <param name="id">Se espera un parametro del Tipo int el cual tenga el Id</param>  
+            <returns>Objeto tipo usuario con sus campos llenos</returns>  
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.UsuarioController.Post(SalonBelleza.EntidadesDeNegocio.Usuario)">
+            <summary>  
+            Metodo para Crear un usuario haciendo peticion a la DAL
+            </summary>  
+            <param name="usuario">Se espera un objeto del Tipo Usuario</param>  
+            <returns>Devuelve un numero de estado correspondiendo a si funciono o no</returns>  
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.UsuarioController.Put(System.Int32,System.Object)">
+            <summary>  
+            Metodo para editar un usuario haciendo peticion a la DAL
+            </summary>  
+            <param name="id">Se espera un entero con el id del Usuario</param>
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario</param>  
+            <returns>Devuelve un numero de estado correspondiendo a si funciono o no</returns>  
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.UsuarioController.Delete(System.Int32)">
+            <summary>  
+            Metodo para eliminar un usuario haciendo peticion a la DAL
+            </summary>  
+            <param name="id">Se espera un entero con el id del Usuario</param>
+            <returns>Devuelve un numero de estado correspondiendo a si funciono o no</returns> 
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.UsuarioController.Buscar(System.Object)">
+            <summary>  
+            Metodo para buscar un usuario haciendo peticion a la DAL
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario</param>  
+            <returns>Devuelve un listado de objetos tipo usuario con sus campos llenos</returns> 
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.UsuarioController.Login(System.Object)">
+            <summary>  
+            Metodo para iniciar sesion haciendo peticion a la DAL
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario</param>  
+            <returns>Devuelve un numero de estado correspondiendo a si funciono o no</returns> 
+        </member>
+        <member name="M:SalonBelleza.WebAPI.Controllers.UsuarioController.CambiarPassword(System.Object)">
+            <summary>  
+            Metodo para cambiar contraseña haciendo peticion a la DAL
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario</param>  
+            <returns>Devuelve un numero de estado correspondiendo a si funciono o no</returns> 
+        </member>
+    </members>
+</doc>

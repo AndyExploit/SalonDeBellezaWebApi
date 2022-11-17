@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalonBelleza.EntidadesDeNegocio", "SalonBelleza.EntidadesDeNegocio\SalonBelleza.EntidadesDeNegocio.csproj", "{E339E496-6807-4B34-87BB-B7958F5849C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalonBelleza.AccesoADatos", "SalonBelleza.AccesoADatos\SalonBelleza.AccesoADatos.csproj", "{DFC0D418-A4B7-48F3-9154-42BD89B23CBD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalonBelleza.LogicaDeNegocio", "SalonBelleza.LogicaDeNegocio\SalonBelleza.LogicaDeNegocio.csproj", "{E7CAA6EB-4A54-4450-AC41-4F0028A4EE62}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalonBelleza.UI.AppWebAspCore", "SalonBelleza.UI.AppWebAspCore\SalonBelleza.UI.AppWebAspCore.csproj", "{796EED2C-88FF-4955-B6D3-E0C09339C207}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalonBelleza.WebAPI", "SalonBelleza.WebAPI\SalonBelleza.WebAPI.csproj", "{D34C5F07-D541-41C2-8ED3-CD748CBCDC7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalonDeBellezaWebAPI.PruebasUnitarias", "SalonDeBellezaWebAPI.PruebasUnitarias\SalonDeBellezaWebAPI.PruebasUnitarias.csproj", "{D1C8A234-2E27-4461-8084-CF70C6C2C8E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E339E496-6807-4B34-87BB-B7958F5849C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E339E496-6807-4B34-87BB-B7958F5849C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E339E496-6807-4B34-87BB-B7958F5849C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E339E496-6807-4B34-87BB-B7958F5849C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFC0D418-A4B7-48F3-9154-42BD89B23CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC0D418-A4B7-48F3-9154-42BD89B23CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC0D418-A4B7-48F3-9154-42BD89B23CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC0D418-A4B7-48F3-9154-42BD89B23CBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7CAA6EB-4A54-4450-AC41-4F0028A4EE62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CAA6EB-4A54-4450-AC41-4F0028A4EE62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CAA6EB-4A54-4450-AC41-4F0028A4EE62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CAA6EB-4A54-4450-AC41-4F0028A4EE62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{796EED2C-88FF-4955-B6D3-E0C09339C207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{796EED2C-88FF-4955-B6D3-E0C09339C207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{796EED2C-88FF-4955-B6D3-E0C09339C207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{796EED2C-88FF-4955-B6D3-E0C09339C207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D34C5F07-D541-41C2-8ED3-CD748CBCDC7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D34C5F07-D541-41C2-8ED3-CD748CBCDC7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D34C5F07-D541-41C2-8ED3-CD748CBCDC7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D34C5F07-D541-41C2-8ED3-CD748CBCDC7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1C8A234-2E27-4461-8084-CF70C6C2C8E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C8A234-2E27-4461-8084-CF70C6C2C8E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C8A234-2E27-4461-8084-CF70C6C2C8E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C8A234-2E27-4461-8084-CF70C6C2C8E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACF8CF06-13DA-4B2B-84A2-37462D170884}
+	EndGlobalSection
+EndGlobal

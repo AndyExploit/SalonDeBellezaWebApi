@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SalonBelleza.EntidadesDeNegocio</name>
+    </assembly>
+    <members>
+        <member name="T:SalonBelleza.EntidadesDeNegocio.Cita">
+            <summary>  
+            Esta clase es de la entidad Cita, se detallara los atributos y los DataAnnotation.  
+            Esta clase contiene un Enum para detallar el Estado de la Cita.
+            Asi mismo esta clase contiene dos llaves foraneas las cuales son IdUsuario, IdCliente.
+            
+            </summary> 
+        </member>
+        <member name="T:SalonBelleza.EntidadesDeNegocio.Cliente">
+            <summary>  
+            Esta clase es de la entidad Cliente, se detallara los atributos y los DataAnnotation.  
+            Esta clase contiene un Id que se usa como llave foranea por la Clase Cita.
+            </summary> 
+        </member>
+        <member name="T:SalonBelleza.EntidadesDeNegocio.DetalleCita">
+            <summary>  
+            Esta clase es de la entidad DetalleCita, se detallara los atributos y los DataAnnotation.  
+            Esta clase contiene una llave foranea de las Clases Cita y Servicio.
+            Posee un Enum para detallar el tipo de Accion a realisar si sera Crear, Modificar, Eliminar.
+            </summary> 
+        </member>
+        <member name="T:SalonBelleza.EntidadesDeNegocio.Rol">
+            <summary>  
+            Esta clase es de la entidad Rol, se detallara los atributos y los DataAnnotation.  
+            Esta clase contiene un Id que se usar como llave foranea por la Clase Usuario.
+            </summary> 
+        </member>
+        <member name="T:SalonBelleza.EntidadesDeNegocio.Servicio">
+            <summary>  
+            Esta clase es de la entidad Servicio, se detallara los atributos y los DataAnnotation.  
+            Esta clase contiene un Id que se usar como llave foranea por la Clase DetalleCita.
+            </summary> 
+        </member>
+        <member name="T:SalonBelleza.EntidadesDeNegocio.Usuario">
+            <summary>  
+            Esta clase es de la entidad Usuario, se detallara los atributos y los DataAnnotation.  
+            Esta clase contiene un enum para especificar el Estado del Usuario.
+            Esta clase tiene una llave foranea llamada IdRol.
+            </summary>   
+              
+        </member>
+    </members>
+</doc>

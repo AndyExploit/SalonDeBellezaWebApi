@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SalonBelleza.LogicaDeNegocio</name>
+    </assembly>
+    <members>
+        <member name="T:SalonBelleza.LogicaDeNegocio.CitaBL">
+            <summary>  
+            Esta clase es de la entidad Cita de la capa Logica de De Negocio
+            Esta clase contiene Los metodos CRUD de cita
+            
+            </summary> 
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.CitaBL.CrearAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para guardar de forma Asincronica. para que un metodo sea Asincronico debe llevar la palabra Async
+             y usar al menos un metodo asincronico en el.
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.CitaBL.ModificarAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Con este metodo Actualisaremos en la base de datos el Cita.
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.CitaBL.EliminarAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para eliminar para Eliminar un Cita en la Base de Datos.
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.CitaBL.ObtenerPorIdAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para Obtener por Id un Cita en la base de Datos
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.CitaBL.ObtenerTodosAsync">
+             <summary>  
+             Metodo para obtener todos los Cita en la base de Datos.'
+             </summary>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.CitaBL.BuscarAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para Obtener por Id un Cita en la base de Datos
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.CitaBL.BuscarIncluirUsuarioAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para Buscar con Citas Incluidos con Usuarios
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.CitaBL.BuscarIncluirClienteAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para Buscar con Citas Incluidos con Clientes
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.CitaBL.BuscarIncluirUsuarioClienteAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+             <summary>  
+             Metodo para Buscar con Citas Incluidos con Usuarios y Clientes
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="T:SalonBelleza.LogicaDeNegocio.ClienteBL">
+            <summary>  
+            Esta clase es de la entidad Cliente de la capa Logica de De Negocio
+            Esta clase contiene Los metodos CRUD de Cliente
+            
+            </summary> 
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.ClienteBL.CrearAsync(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para crear un Nuevo cliente.
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Cliente, con sus valores llenos</param>  
+            <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.ClienteBL.ModificarAsync(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para Modificar un Cliente segun los parametros agregados.
+            </summary>  
+            <param name="pCliente">Se espera un objeto del tipo Cliente con todas sus propiedades llenas</param>
+            <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.ClienteBL.EliminarAsync(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para Eliminar un Cliente segun el Id.
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Cliente, con sus valores llenos</param>  
+            <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.ClienteBL.ObtenerPorIdAsync(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para obtener por ID un cliente ingresado
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Cliente, con sus valores llenos</param>  
+            <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.ClienteBL.ObtenerTodosAsync">
+            <summary>  
+            Metodo para Obtener todos los Cliente.
+            </summary>  
+            <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.ClienteBL.BuscarAsync(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para Buscar un Cliente Async
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+            <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="T:SalonBelleza.LogicaDeNegocio.DetalleCitaBL">
+            <summary>  
+            Esta clase es de la entidad DetalleCita de la capa Logica de De Negocio
+            Esta clase contiene Los metodos CRUD de Detallecita
+            
+            </summary> 
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.DetalleCitaBL.CrearAsync(SalonBelleza.EntidadesDeNegocio.DetalleCita)">
+             <summary>  
+             Aqui se retorna el Metodo para guardar de forma Asincronica. para que un metodo sea Asincronico debe llevar la palabra Async
+             y usar al menos un metodo asincronico en el.
+             </summary> 
+             <param name="pDetalleCita">Se espera un objeto del Tipo DetalleCita, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.DetalleCitaBL.ModificarAsync(SalonBelleza.EntidadesDeNegocio.DetalleCita)">
+             <summary>  
+             Con este metodo Actualisaremos en la base de datos el DetalleCita.
+             </summary>  
+             <param name="pDetalleCita">Se espera un objeto del Tipo DetalleCita, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.DetalleCitaBL.EliminarAsync(SalonBelleza.EntidadesDeNegocio.DetalleCita)">
+             <summary>  
+             Metodo para eliminar para Eliminar un DetalleCita en la Base de Datos.
+             </summary>  
+             <param name="pDetalleCita">Se espera un objeto del Tipo DetalleCita, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.DetalleCitaBL.ObtenerPorIdAsync(SalonBelleza.EntidadesDeNegocio.DetalleCita)">
+             <summary>  
+             Metodo para Obtener por Id un DetalleCita en la base de Datos
+             </summary>  
+             <param name="pDetalleCita">Se espera un objeto del Tipo DetalleCita, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.DetalleCitaBL.ObtenerTodosAsync">
+             <summary>  
+             Metodo para obtener todos los DetalleCita en la base de Datos.'
+             </summary>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.DetalleCitaBL.BuscarAsync(SalonBelleza.EntidadesDeNegocio.DetalleCita)">
+             <summary>  
+             Metodo para Obtener por Id un DetalleCita en la base de Datos
+             </summary>  
+             <param name="pCita">Se espera un objeto del Tipo Cita, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="T:SalonBelleza.LogicaDeNegocio.RolBL">
+            <summary>  
+            Esta clase es de la entidad Rol de la capa Logica de De Negocio
+            Esta clase contiene Los metodos CRUD de Rol
+            
+            </summary> 
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.RolBL.CrearAsync(SalonBelleza.EntidadesDeNegocio.Rol)">
+             <summary>  
+             Metodo para guardar de forma Asincronica. para que un metodo sea Asincronico debe llevar la palabra Async
+             y usar al menos un metodo asincronico en el.
+             </summary>  
+             <param name="pRol">Se espera un objeto del Tipo Rol, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.RolBL.ModificarAsync(SalonBelleza.EntidadesDeNegocio.Rol)">
+             <summary>  
+             Con este metodo Actualisaremos en la base de datos el Rol.
+             </summary>  
+             <param name="pRol">Se espera un objeto del Tipo Rol, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.RolBL.EliminarAsync(SalonBelleza.EntidadesDeNegocio.Rol)">
+             <summary>  
+             Metodo para eliminar para Eliminar un Rol en la Base de Datos.
+             </summary>  
+             <param name="pRol">Se espera un objeto del Tipo Rol, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.RolBL.ObtenerPorIdAsync(SalonBelleza.EntidadesDeNegocio.Rol)">
+             <summary>  
+             Metodo para Obtener por Id un Rol en la base de Datos
+             </summary>  
+             <param name="pRol">Se espera un objeto del Tipo Rol, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.RolBL.ObtenerTodosAsync">
+             <summary>  
+             Metodo para obtener todos los Roles en la base de Datos.'
+             </summary>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.RolBL.BuscarAsync(SalonBelleza.EntidadesDeNegocio.Rol)">
+             <summary>  
+             Metodo para Obtener por Id un Rol en la base de Datos
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="T:SalonBelleza.LogicaDeNegocio.ServicioBL">
+            <summary>  
+            Esta clase es de la entidad Servicio de la capa Logica de De Negocio
+            Esta clase contiene Los metodos CRUD de Servicio
+            
+            </summary> 
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.ServicioBL.CrearAsync(SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo para crear un Nuevo Servicio.
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Servicio, con sus valores llenos</param>  
+            <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.ServicioBL.ModificarAsync(SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo para Modificar un Servicio si encuentra coincidencia en la base de datos.
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Servicio, con sus valores llenos</param>  
+            <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.ServicioBL.EliminarAsync(SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo para Eliminar un servicio si encuentra un Id como coincidencia.
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Servicio, con sus valores llenos</param>  
+            <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.ServicioBL.ObtenerPorIdAsync(SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo para Obtener un Servicio Por ID
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Cliente, con sus valores llenos</param>  
+            <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.ServicioBL.ObtenerTodosAsync">
+            <summary>  
+            Metodo para Obtener Todos los Servicios
+            </summary>   
+            <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.ServicioBL.BuscarAsync(SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo para Buscar un Cliente Async
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+            <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="T:SalonBelleza.LogicaDeNegocio.UsuarioBL">
+            <summary>  
+            Esta clase es de la entidad Usuario de la capa Logica de De Negocio
+            Esta clase contiene Los metodos CRUD de Usuario
+            
+            </summary> 
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.UsuarioBL.CrearAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+             <summary>  
+             Metodo para guardar de forma Asincronica. para que un metodo sea Asincronico debe llevar la palabra Async
+             y usar al menos un metodo asincronico en el.
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.UsuarioBL.ModificarAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+             <summary>  
+             Con este metodo Actualisaremos en la base de datos el Usuario.
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.UsuarioBL.EliminarAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+             <summary>  
+             Metodo para eliminar para Eliminar un Usuario en la Base de Datos.
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.UsuarioBL.ObtenerPorIdAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+             <summary>  
+             Metodo para Obtener por Id un usuario en la base de Datos
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.UsuarioBL.ObtenerTodosAsync">
+             <summary>  
+             Metodo para obtener todos los Usuarios en la base de Datos.'
+             </summary>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.UsuarioBL.BuscarAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+             <summary>  
+             Metodo para Obtener por Id un usuario en la base de Datos
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.UsuarioBL.LoginAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+            <summary>  
+            Metodo para Iniciar el login y validar si esas credenciales existen en el sistema.
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+            <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.UsuarioBL.CambiarPasswordAsync(SalonBelleza.EntidadesDeNegocio.Usuario,System.String)">
+            <summary>  
+            Metodo para cambiar el Password, Comparando si esta correcto el password actual.
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+            /// <param name="pPasswordAnt">Se espera una variable la cual contenga la PasswordAnterior</param>
+            <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.LogicaDeNegocio.UsuarioBL.BuscarIncluirRolesAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+             <summary>  
+             Metodo para Buscar con Roles Incluidos
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario, con sus valores llenos</param>  
+             <returns>Retorna una tarea Asyncrona</returns>  
+            
+        </member>
+    </members>
+</doc>

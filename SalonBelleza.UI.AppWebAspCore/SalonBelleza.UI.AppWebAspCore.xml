@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SalonBelleza.UI.AppWebAspCore</name>
+    </assembly>
+    <members>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.CitaController.ObtenerCitaPorIdAsync(SalonBelleza.EntidadesDeNegocio.Cita)">
+            <summary>  
+            Metodo para Obtener por Id una Cita hacinedo peticion a la API
+            </summary>  
+            <param name="pCita">Se espera un objeto del Tipo Cita el cual tenga el Id</param>  
+            <returns>Objeto tipo cita con sus atributos llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.CitaController.ObtenerClientePorIdAsync(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para obtener clientes por Id hacinedo peticion a la API
+            </summary>  
+            <param name="id">Se espera una variable int la cual contenga el Id del registro a observar</param>  
+            <returns>Retorna la vista con un objeto cliente</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.CitaController.Index(SalonBelleza.EntidadesDeNegocio.Cita)">
+            <summary>  
+            Metodo Index para obtener toda una Lista de Cita al hacer Peticion a la API
+            </summary>  
+            <param name="pCita">Se espera un objeto del Tipo Cita con sus parametros llenos</param>  
+            <returns>Retorna la vista Index con objeto Cita</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.CitaController.Details(System.Int32)">
+            <summary>  
+            Metodo para obtener detalles de Cita haicnedo peticiones a la API
+            </summary>  
+            <param name="id">Se espera una variable int la cual contenga el Id del registro a observar</param>  
+            <returns>Retorna la vista con un objeto Cita</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.CitaController.Create">
+            <summary>  
+            Metodo para Get de la Vista Create Para obtener Clientes,Usuarios,Servicios
+            </summary>   
+            <returns>Retorna la vista de Create</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.CitaController.Create(SalonBelleza.EntidadesDeNegocio.Cita)">
+            <summary>  
+            Metodo para crear un Cita haciendo Peticion a la API
+            </summary>  
+            <param name="pCita">Se espera un objeto del Tipo Cita con sus atributos llenos</param>  
+            <returns>Retorna la vista con un objeto tipo Cita</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.CitaController.Edit(SalonBelleza.EntidadesDeNegocio.Cita)">
+            <summary>  
+            Metodo para Modificar una Cita haciendo peticion a la API
+            </summary>  
+            <param name="pCita">Se espera un objeto del Tipo Cita el cual tenga el Id</param>  
+            <returns>Retorna la vista con un objeto tipo Cita</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.CitaController.Edit(System.Int32,SalonBelleza.EntidadesDeNegocio.Cita)">
+            <summary>  
+            Metodo para Modificar una Cita haciendo peticion a la api
+            </summary>  
+            <param name="pCita">Se espera un objeto del Tipo Cita el cual tenga el Id</param>  
+            <returns>Retorna la vista y un objeto tipo Cita</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.CitaController.Delete(SalonBelleza.EntidadesDeNegocio.Cita)">
+            <summary>  
+            Metodo Get de Delete haicnedo peticion a la API
+            </summary>  
+            <param name="pCita">Se espera un objeto del Tipo Cita el cual tenga el Id</param>  
+            <returns>Retorna la vista y un objteo tipo Cita con sus valores llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.CitaController.Delete(System.Int32,SalonBelleza.EntidadesDeNegocio.Cita)">
+            <summary>  
+            Metodo para Eliminar una Cita haiciendo peticion a la API
+            </summary>  
+            <param name="pCita">Se espera un objeto del Tipo Cita</param> 
+            <param name="id">Se espera un entero el cual contenga el Id</param> 
+            <returns>Retorna la vista y el objeto cita</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ClienteController.ObtenerClientePorIdAsync(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para Obtener por Id un Servicio haicnedo peticion a la API
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Cliente el cual tenga el Id</param>  
+            <returns>Objeto tipo usuario con sus atributos llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ClienteController.RefrescarToken">
+            <summary>  
+            Metodo para Refrescar el Token
+            </summary>    
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ClienteController.Index(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo Index para obtener toda una Lista de Usuario y Roles al hacer Peticion a la API
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Cliente con sus parametros llenos</param>  
+            <returns>Retorna la vista Index con objeto Cliente</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ClienteController.Details(System.Int32)">
+            <summary>  
+            Metodo para obtener detalles de Cliente haicnedo peticion a la API
+            </summary>  
+            <param name="id">Se espera una variable int la cual contenga el Id del registro a observar</param>  
+            <returns>Retorna la vista con un objeto cliente</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ClienteController.Create">
+            <summary>  
+            Metodo para Get de la Vista Create
+            </summary>   
+            <returns>Retorna la vista de Create</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ClienteController.Create(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para crear un Cliente haciendo Peticion a la API
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Usuario con sus atributos llenos</param>  
+            <returns>Retorna la vista con un objeto tipo usuario</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ClienteController.Edit(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para Modificar un Cliente haciendo peticion a la API
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Cliente el cual tenga el Id</param>  
+            <returns>Retorna la vista con un objeto tipo cliente</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ClienteController.Edit(System.Int32,SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para Modificar un Cliente haciendo peticion a la api
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Cliente el cual tenga el Id</param>  
+            <returns>Retorna la vista y un objeto tipo Cliente</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ClienteController.Delete(SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo Get de Delete haicnedo peticion a la API
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Usuario el cual tenga el Id</param>  
+            <returns>Retorna la vista y un objteo tipo Cliente con sus valores llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ClienteController.Delete(System.Int32,SalonBelleza.EntidadesDeNegocio.Cliente)">
+            <summary>  
+            Metodo para Eliminar un Cliente haiciendo peticion a la API
+            </summary>  
+            <param name="pCliente">Se espera un objeto del Tipo Cliente</param> 
+            <param name="id">Se espera un entero el cual contenga el Id</param> 
+            <returns>Retorna la vista y el objeto cliente</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.RolController.ObtenerRolPorIdAsync(SalonBelleza.EntidadesDeNegocio.Rol)">
+            <summary>  
+            Metodo para Obtener por Id un Rol haicnedo peticion a la API
+            </summary>  
+            <param name="pRol">Se espera un objeto del Tipo Rol el cual tenga el Id</param>  
+            <returns>Objeto tipo Rol con sus atributos llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.RolController.Index(SalonBelleza.EntidadesDeNegocio.Rol)">
+            <summary>  
+            Metodo Index para obtener toda una Lista de Roles al hacer Peticion a la API
+            </summary>  
+            <param name="pRol">Se espera un objeto del Tipo Rol con sus parametros llenos</param>  
+            <returns>Retorna la vista Index con objeto Rol</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.RolController.Details(System.Int32)">
+            <summary>  
+            Metodo para obtener detalles de Rol haicnedo peticion a la API
+            </summary>  
+            <param name="id">Se espera una variable int la cual contenga el Id del registro a observar</param>  
+            <returns>Retorna la vista con un objeto  Rol</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.RolController.Create">
+            <summary>  
+            Metodo para Get de la Vista Create
+            </summary>   
+            <returns>Retorna la vista de Create</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.RolController.Create(SalonBelleza.EntidadesDeNegocio.Rol)">
+            <summary>  
+            Metodo para crear un Rol haciendo Peticion a la API
+            </summary>  
+            <param name="pRol">Se espera un objeto del Tipo Rol con sus atributos llenos</param>  
+            <returns>Retorna la vista con un objeto tipo Rol</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.RolController.Edit(SalonBelleza.EntidadesDeNegocio.Rol)">
+            <summary>  
+            Metodo para Modificar un Rol haciendo peticion a la API
+            </summary>  
+            <param name="pRol">Se espera un objeto del Tipo Rol el cual tenga el Id</param>  
+            <returns>Retorna la vista con un objeto tipo Rol</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.RolController.Edit(System.Int32,SalonBelleza.EntidadesDeNegocio.Rol)">
+            <summary>  
+            Metodo para Modificar un Rol haciendo peticion a la api
+            </summary>  
+            <param name="pRol">Se espera un objeto del Tipo Rol el cual tenga el Id</param>  
+            <returns>Retorna la vista y un objeto tipo Rol</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.RolController.Delete(SalonBelleza.EntidadesDeNegocio.Rol)">
+            <summary>  
+            Metodo Get de Delete haciendo peticion a la API
+            </summary>  
+            <param name="pRol">Se espera un objeto del Tipo Rol el cual tenga el Id</param>  
+            <returns>Retorna la vista y un objteo tipo Rol con sus valores llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.RolController.Delete(System.Int32,SalonBelleza.EntidadesDeNegocio.Rol)">
+            <summary>  
+            Metodo para Eliminar un Rol haiciendo peticion a la API
+            </summary>  
+            <param name="pRol">Se espera un objeto del Tipo Rol</param> 
+            <param name="id">Se espera un entero el cual contenga el Id</param> 
+            <returns>Retorna la vista y el objeto rol</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ServicioController.ObtenerServicioPorIdAsync(SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo para Obtener por Id un Servicio haicnedo peticion a la API
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Servicio el cual tenga el Id</param>  
+            <returns>Objeto tipo cliente con sus atributos llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ServicioController.RefrescarToken">
+             <summary>  
+             Metodo para Refrescar el Token
+             </summary>    
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ServicioController.Index(SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo Index para obtener toda una Lista de Servicio al hacer Peticion a la API
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Servicio con sus parametros llenos</param>  
+            <returns>Retorna la vista Index con objeto Servicio</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ServicioController.Details(System.Int32)">
+            <summary>  
+            Metodo para obtener detalles de Servicio haicnedo peticion a la API
+            </summary>  
+            <param name="id">Se espera una variable int la cual contenga el Id del registro a observar</param>  
+            <returns>Retorna la vista con un objeto servicio</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ServicioController.Create">
+            <summary>  
+            Metodo para Get de la Vista Create
+            </summary>   
+            <returns>Retorna la vista de Create</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ServicioController.Create(SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo para crear un Servicio haciendo Peticion a la API
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Servicio con sus atributos llenos</param>  
+            <returns>Retorna la vista con un objeto tipo servicio</returns>  
+            
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:SalonBelleza.UI.AppWebAspCore.Controllers.ServicioController.Edit(SalonBelleza.EntidadesDeNegocio.Servicio)" -->
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ServicioController.Edit(System.Int32,SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo para Modificar un Servicio haciendo peticion a la api
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Servicio el cual tenga el Id</param>  
+            <returns>Retorna la vista y un objeto tipo servicio</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ServicioController.Delete(SalonBelleza.EntidadesDeNegocio.Servicio)">
+             <summary>  
+             Metodo Get de Delete haicnedo peticion a la API
+             </summary>  
+             <param name="pServicio">Se espera un objeto del Tipo Servicio el cual tenga el Id</param>  
+             <returns>Retorna la vista y un objteo tipo Servicio con sus valores llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.ServicioController.Delete(System.Int32,SalonBelleza.EntidadesDeNegocio.Servicio)">
+            <summary>  
+            Metodo para Eliminar un Servicio haiciendo peticion a la API
+            </summary>  
+            <param name="pServicio">Se espera un objeto del Tipo Servicio</param> 
+            <param name="id">Se espera un entero el cual contenga el Id</param> 
+            <returns>Retorna la vista y el objeto servicio</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.UsuarioController.ObtenerUsuarioPorIdAsync(SalonBelleza.EntidadesDeNegocio.Usuario)">
+            <summary>  
+            Metodo para Obtener por Id un usuario haicnedo peticion a la API
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario el cual tenga el Id</param>  
+            <returns>Objeto tipo usuario con sus campos llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.UsuarioController.ObtenerRolPorIdAsync(SalonBelleza.EntidadesDeNegocio.Rol)">
+            <summary>  
+            Metodo para Obtener por Id un Rol haicnedo peticion a la API
+            </summary>  
+            <param name="pRol">Se espera un objeto del Tipo Rol el cual tenga el Id</param>  
+            <returns>Objeto tipo usuario con sus campos llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.UsuarioController.ObtenerRolesAsync">
+            <summary>  
+            Metodo para Obtener todos los Roles haicnedo peticion a la API
+            </summary>   
+            <returns>Objeto tipo usuario con sus campos llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.UsuarioController.RefrescarToken">
+            <summary>  
+            Metodo para Obtener por Id un usuario haicnedo peticion a la API
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario el cual tenga el Id</param>  
+            <returns>Objeto tipo usuario con sus campos llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.UsuarioController.Index(SalonBelleza.EntidadesDeNegocio.Usuario)">
+            <summary>  
+            Metodo para Obtener por Id un usuario haicnedo peticion a la API
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario el cual tenga el Id</param>  
+            <returns>Objeto tipo usuario con sus campos llenos</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.UsuarioController.Create(SalonBelleza.EntidadesDeNegocio.Usuario)">
+            <summary>  
+            Metodo para Crear un Usuario haciendo Peticion a la API
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario el cual tenga el Id</param>  
+            <returns>Retorna la vista y el objeto Usuario</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.UsuarioController.Edit(System.Int32,SalonBelleza.EntidadesDeNegocio.Usuario)">
+            <summary>  
+            Metodo para Modificar un Usuario haciendo Peticion a la API
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario el cual tenga el Id</param>  
+            <param name="id">Se espera un Entero el cual contenga el Id del Usuario a modificar</param>
+            <returns>Retorna la vista y el objeto Usuario</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.UsuarioController.Delete(SalonBelleza.EntidadesDeNegocio.Usuario)">
+            <summary>  
+            Metodo para Eliminar un Usuario haciendo Peticion a la API
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario el cual tenga el Id</param>  
+            <returns>Retornar la vista y el objeto Usuario</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.UsuarioController.Delete(System.Int32,SalonBelleza.EntidadesDeNegocio.Usuario)">
+            <summary>  
+            Metodo para Eliminar un Usuario haciendo Peticion a la API
+            </summary>  
+            <param name="pUsuario">Se espera un objeto del Tipo Usuario el cual tenga el Id</param>  
+            <param name="id">Se espera un entero con el Id del usaurio</param> 
+            <returns>Retornar la vista y el objeto Usuario</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.UsuarioController.Login(System.String)">
+             <summary>  
+             Metodo Get para obtener la vista Login
+             </summary>  
+             <param name="ReturnUrl">Se espera una varible Tipo String el cual debe contener la Url</param>   
+             <returns>La vista de Tipo Login</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.UsuarioController.Login(SalonBelleza.EntidadesDeNegocio.Usuario,System.String)">
+             <summary>  
+             Metodo Login el cual le hara una Peticion a la API
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario el cual contenga todos sus campos llenos a excepsion del Id</param>  
+             <param name="pReturnUrl">Se espera un string el cual contenga la Url</param> 
+             <returns>Si el Login es correcto retorna la vista Index Home</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.UsuarioController.CerrarSesion(System.String)">
+             <summary>  
+             Metodo para Cerrar sesion quitando el Token de autorisacion
+             </summary> 
+             <param name="ReturnUrl">Se espera un string el cual contenga la Url</param> 
+             <returns>Retoran la vista Login</returns>  
+            
+        </member>
+        <member name="M:SalonBelleza.UI.AppWebAspCore.Controllers.UsuarioController.CambiarPassword(SalonBelleza.EntidadesDeNegocio.Usuario,System.String)">
+             <summary>  
+             Metodo para cambiar la Password haciendo peticion a la API
+             </summary>  
+             <param name="pUsuario">Se espera un objeto del Tipo Usuario el cual contenga todos sus campos llenos</param>  
+             <param name="pPasswordAnt">Se espera un string el cual contenga la PasswordAnterior del usuario</param> 
+             <returns>Retorna el usuario Actual con sus valores</returns>  
+            
+        </member>
+    </members>
+</doc>

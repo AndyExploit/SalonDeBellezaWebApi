@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewData["Title"] = "ManejarTablas";
+}
+
+
+<script type="text/javascript">
+    var  indice = -1;
+    var id = 0;
+    function add() {
+        indice++
+        id++;
+        var t1 = document.getElementById("table");
+        let tbody = document.getElementById("tbd");
+
+        let rowl = document.createElement("TR");
+        //row.heigth - 110
+        for (var i = 0; i < 6; i++) {
+            var col1 = document.createElement("TD");
+            col1.innerHTML = "<font color='red'>" + new Date() + "</font>";  
+            if (i >= 0 || i <= 1) {
+                var txt = document.createElement("input");
+                col1.appendChild(txt);
+                txt.type = "hidden";
+                if (i == 0) {
+                    txt.name = "DetalleCita[" + indice + "].Id";
+                    txt.setAttribute("data-name", "DetalleCita[{0}].Id");
+                    txt.value = id;
+                }
+                else if (i == 1) {
+                    txt.name = "DetalleCita[" + indice + "].IdServicio";
+                    txt.setAttribute("data-name", "DetalleCita[{0}].IdServicio");
+                    txt.value = id+100;
+                }
+                else if (i == 3) {
+                    txt.type = "text";
+                    txt.name = "DetalleCita[" + indice + "].PrecioServicio";
+                    txt.setAttribute("data-name", "DetalleCita[{0}].PrecioServicio");
+                    txt.value = 0;
+                }
+            }
+            rowl.appendChild(col1);
+
+        }
+        (function() {
+            var col1 = document.createElement("TD");
+            rowl.appendChild(col1);
+            var btnEliminar = document.createElement("button");
+            col1.appendChild(btnEliminar);
+            btnEliminar.innerText = "Eliminar";
+            btnEliminar.type = "button";
+            btnEliminar.addEventListener("click", () => {
+                tbody.removeChild(rowl)
+                var trs = tbody.querySelectorAll("tr");
+                for (var i = 0; i < trs.length; i++)
+                {
+                    var item_tr = trs[i];
+                    var inputs = item_tr.querySelectorAll("input[data-name]");
+                    for (var j = 0; j < inputs.length; j++)
+                    {
+                        var input = inputs[j];
+                        var dataName = input.getAttribute("data-name");
+                        dataName = dataName.replace("{0}", i);
+                        input.name = dataName;
+                    }
+                }
+            });
+        }) ();
+      
+       
+       
+        tbody.appendChild(rowl);
+        t1.appendChild(tbody);
+    }
+
+</script>
+<form asp-action="Create" asp-controller="Cita">
+    <input type="text" name="Id">
+
+    <button onclick="add();" type="button">
+        Unirse
+    </button>
+    <table border="1" id="table">
+        <thead>
+            <tr>
+                <td>Codigo de barras del producto< /td>
+                <td>Nombre del producto< /td>
+                <td>Unidad< /td>
+                <td>Cantidad< /td>
+                <td>Cantidad< /td>
+                <td>Total< /td>
+                <td>Eliminar< /td>
+            </tr>
+        </thead>
+        <tbody id="tbd">
+        </tbody>
+    </table>
+    <button type="submit">
+        Enviar
+    </button>
+</form>
+
+
+

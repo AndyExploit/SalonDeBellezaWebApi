@@ -1,0 +1,87 @@
+﻿@model SalonBelleza.EntidadesDeNegocio.Usuario
+
+@{
+    ViewData["Title"] = "Login";
+}
+<style>
+    /*Estilos css para el Login*/
+   
+    h3 {
+        text-align: center;
+        padding-top: 20px;
+        font-family: Verdana, sans-serif;
+    }
+
+    .row {
+        padding-bottom: 20px;
+    }
+
+    form {
+        padding-top: 20px;
+        height: 200px;
+    }
+
+    .card-header {
+        padding-top: 10px;
+        background: #7F7FD5;
+        background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+        background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+        background-color: #fff;
+        border: 0px;
+        width: 100%;
+        border-radius: 15px 15px 15px 15px
+    }
+
+    .card {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        background-color: rgba(0,0,0,0.3) !important;
+        border: 0 !important;
+        color: black !important;
+        background: black;
+    }
+
+    .form-group .btn {
+        width: 30%;
+        
+    }
+</style>
+
+
+
+<div class="card">
+    <div class="card-header">
+        <h3>Iniciar Sesion</h3>
+        <img src="~/imagenes/17503049231586786427-512.png" class="rounded mx-auto d-block" alt="..." width="150" height="150">
+    </div>
+    <div class="card-body">
+        <div class="row">
+
+            <div class="col-md-12">
+                <form asp-action="Login">
+                    <input type="hidden" name="pReturnUrl" value="@ViewBag.Url" />
+                    <div class="mb-3">
+                        <label asp-for="Login" class="control-label"></label>
+                        <input asp-for="Login" class="form-control" />
+                        <span asp-validation-for="Login" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Password" class="control-label"></label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Login" class="btn btn-primary" />
+                    </div>
+                    <span class="text-danger">@ViewBag.Error</span>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

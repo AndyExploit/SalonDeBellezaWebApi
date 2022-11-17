@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Saul\source\repos\AndromedaCorp\SalonDeBellezaHub\SalonBelleza.EntidadesDeNegocio\SalonBelleza.EntidadesDeNegocio.xml</DocumentationFile>
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+</Project>

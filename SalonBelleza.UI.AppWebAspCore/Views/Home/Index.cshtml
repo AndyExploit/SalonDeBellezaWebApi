@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenidos</h1>
+    <p> Al sistema de gestion de citas y clientes, para el Salon de Belleza.</p>
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <center><h5 class="card-title">Servicios</h5></center>
+                <p class="card-text">Para observar los registros de servicios registrados y tener un catalogo de estos.</p>
+                <a class="btn btn-primary" asp-area="" asp-controller="Servicio" asp-action="Index">Ir a la pantalla</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <center><h5 class="card-title">Cliente</h5></center>
+                <p class="card-text">Para observar clientes registrados en el sistema ademas de agregar nuevos clientes, modificarlos y eliminarlos.</p>
+                <a class="btn btn-primary" asp-area="" asp-controller="Cliente" asp-action="Index">Ir a la pantalla</a>
+            </div>
+        </div>
+    </div>
+</div>
